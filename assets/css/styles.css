@@ -1,0 +1,140 @@
+:root {
+  --main-bg: gray
+}
+
+.headerNav {
+  background-color: gray;
+}
+
+.filterProperties {
+  z-index:1000;
+}
+
+.containerFilter > div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.selectProperties {
+  color: #fff;
+  background-color: gray;
+  border-radius: 7em;
+}
+
+.inputfilterProperties {
+  width: 50%;
+  color: #fff;
+  background-color: gray;
+  border-radius: 7em;
+  opacity: .8;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+
+.inputfilterProperties:focus {
+  color: white;
+  background-color: gray;
+}
+
+.inputfilterProperties::placeholder {
+  color: white;
+  background-color: gray;
+  text-align: center;
+}
+
+
+.selectProperties::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.form-select:focus {
+  border-color: white;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(145, 152, 163, 0.07);
+}
+
+.form-check-input:focus {
+  border-color: gray !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(145, 152, 163, 0.07);
+}
+
+input:checked {
+  background-color: black !important;
+  border-color: gray !important;
+}
+
+@media screen and (max-width: 567px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .card-wrapper:not(:first-child) {
+    display: flex;
+  }
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 0.1rem;
+  width: calc(100%/3);
+  border: 1px solid gray;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.image-wrapper {
+  max-height: 100%;
+  
+  margin: 1.3   e m;
+  margin-bottom: 1px;
+  width:100%;
+  height:200px;
+}
+
+.image-wrapper img {
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+.card-title {
+  font-weight: 500;
+  font-weight:bold ;
+  font-size: medium;
+}
+
+.textNosotros  {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card .uf-item-price {
+  position: absolute;
+  right: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0.3rem;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: gray;
+  width: 20%;
+}
+
+.icon-map-marker:before {
+  content: "\f041";
+}
