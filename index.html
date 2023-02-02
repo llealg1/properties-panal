@@ -26,7 +26,117 @@
 <body>
   
   <section style="padding-top: 0;" >
-    
+    <section id="hero" class="p-0 mb-4">
+
+
+      <div class="">
+  
+        <form>
+          <div class="container-fluid container-xl filterProperties"
+            style="background-color: gray; position: relative;margin-top: 5vh;">
+            <div class="row containerFilter">
+  
+              <div class="col-md-4 col-sm-12  align-self-center">
+                <select class="form-select selectProperties" id="typeOfOperation" aria-label="Default select example">
+                  <option selected>Tipo de operación</option>
+                  <option value="1">Venta</option>
+                  <option value="2">Arrienda</option>
+                </select>
+              </div>
+  
+              <div class="col-md-4 col-sm-12  align-self-center">
+                <select class="form-select selectProperties" id="typeOfProperty" aria-label="Default select example">
+                  <option selected>Tipo de inmueble</option>
+                  <option value="1">Casa</option>
+                  <option value="2">Departamento</option>
+                  <option value="3">Oficina</option>
+                  <option value="3">Sition</option>
+                  <option value="3">Local Comercial</option>
+                  <option value="3">Industrial</option>
+                </select>
+              </div>
+  
+              <div class="col-md-4 col-sm-12   align-self-center">
+                <select class="form-select selectProperties" id="region"aria-label="Default select example">
+                  <option selected>Región</option>
+                  <option value="0">Región Metropolitana</option>
+                  <option value="1">Región Los Ríos </option>
+                  <option value="2">Región Arica y Parinacota</option>
+                  <option value="3">Región Ñuble</option>
+                  <option value="4">Región Tarapacá​​</option>
+                  <option value="4">Región Antofagasta​​</option>
+                </select>
+              </div>
+  
+              <div class="col-md-4 col-sm-12   align-self-center">
+                <select class="form-select selectProperties" id="commune" aria-label="Default select example">
+                  <option selected>Comuna</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+  
+              <div class="col-md-4 col-sm-12  align-self-center d-flex selectProperties justify-content-center">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label" for="inlineCheckbox1">Precio</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">UF</label>
+                </div>
+                <div class="form-check form-check-inline ">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">CLP</label>
+                </div>
+              </div>
+  
+              <div class="col-md-4 col-sm-12  align-self-center d-flex selectProperties justify-content-around">
+                <input class="form-control selectProperties inputfilterProperties " type="text" id="min_price"
+                  placeholder="Desde">
+                <input class="form-control selectProperties inputfilterProperties " type="text" id="max_price"
+                  placeholder="Hasta">
+              </div>
+  
+              <div class="col-md-4 col-sm-12  align-self-center">
+                <select class="form-select selectProperties" id="bedrooms" aria-label="Default select example">
+                  <option selected>Habitaciones</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+  
+  
+              <div class="col-md-4 col-sm-12  align-self-center">
+                <select class="form-select selectProperties" id="bathrooms" aria-label="Default select example">
+                  <option selected>Baños</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+  
+  
+              <div class="col-md-4 col-sm-12   align-self-center ">
+                <select class="form-select selectProperties" id="surface_m2" aria-label="Default select example" style="color: white;">
+                  <option selected>Superficie (m&sup2;)</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="col-12   align-self-center text-center">
+                <button class="btn btn-primary bg-" type="button" id="buscar">Buscar</button>
+              </div>
+  
+            </div>
+          </div>
+        </form>
+      </div>
+  
+    </section><!-- End Hero Section -->  
     <div class="container" style="padding: 0 7%;">
       <h1 class="text-center">Propiedades </h1>
       <div class="d-flex justify-content-between align-items-end  ">
@@ -57,92 +167,28 @@
         </div>
       </div>
       <div class="row d-flex justify-content-center" id="container-cards">
-        <div class="col-4 mt-3 p-0 mx-0">
-          <div class="card" style="width: 100%; margin: 0 auto;">
-            <a href="propiedad.html" style="color: gray">
-            <span class="uf-item-price">Venta</span>
-            <div class="image-wrapper">
-              <img src="./assets/img/constructions-1.jpg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-bold">LUJOSA OFICINA EN VENTA LA DEHESA</h5>
-              <p class="card-text mb-0"><i class="fa-solid fa-location-dot"></i> Lo Barnechea, LO BARNECHEA</p>
-              <p class="card-text" style="font-weight: bold ;">UF 8,843 / CLP $ 302.825.086</p>
-              <hr style="border-bottom: 3px solid black;" />
-              <div class="d-flex justify-content-around">
-                <p style="font-weight: bold;">M&sup2 32</p>
-                <p><i class="fa-solid fa-bed"></i> 2</p>
-                <p><i class="fa-solid fa-toilet"></i> 3</p>
-                <p><i class="fa-solid fa-car"></i> 1</p>
-              </div>
-            </div>
-          </a>
-          </div>
-        </div>
-
-        <div class="col-4 mt-3 p-0 mx-0">
-          <div class="card" style="width: 100%; margin: 0 auto;">
-            <a href="propiedad.html" style="color: gray">
-            <span class="uf-item-price">Venta</span>
-            <div class="image-wrapper">
-              <img src="./assets/img/constructions-1.jpg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-bold">LUJOSA OFICINA EN VENTA LA DEHESA</h5>
-              <p class="card-text mb-0"><i class="fa-solid fa-location-dot"></i> Lo Barnechea, LO BARNECHEA</p>
-              <p class="card-text" style="font-weight: bold ;">UF 8,843 / CLP $ 302.825.086</p>
-              <hr style="border-bottom: 3px solid black;" />
-              <div class="d-flex justify-content-around">
-                <p style="font-weight: bold;">M&sup2 32</p>
-                <p><i class="fa-solid fa-bed"></i> 2</p>
-                <p><i class="fa-solid fa-toilet"></i> 3</p>
-                <p><i class="fa-solid fa-car"></i> 1</p>
-              </div>
-            </div>
-          </a>
-          </div>
-        </div>
-        <div class="col-4 mt-3 p-0 mx-0">
-          <div class="card" style="width: 100%; margin: 0 auto;">
-            <a href="propiedad.html" style="color: gray">
-            <span class="uf-item-price">Venta</span>
-            <div class="image-wrapper">
-              <img src="./assets/img/constructions-1.jpg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-bold">LUJOSA OFICINA EN VENTA LA DEHESA</h5>
-              <p class="card-text mb-0"><i class="fa-solid fa-location-dot"></i> Lo Barnechea, LO BARNECHEA</p>
-              <p class="card-text" style="font-weight: bold ;">UF 8,843 / CLP $ 302.825.086</p>
-              <hr style="border-bottom: 3px solid black;" />
-              <div class="d-flex justify-content-around">
-                <p style="font-weight: bold;">M&sup2 32</p>
-                <p><i class="fa-solid fa-bed"></i> 2</p>
-                <p><i class="fa-solid fa-toilet"></i> 3</p>
-                <p><i class="fa-solid fa-car"></i> 1</p>
-              </div>
-            </div>
-          </a>
-          </div>
-        </div>
-        <div class="col-12 mt-5 d-flex justify-content-center">
-          <nav aria-label="Page navigation example" >
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link "style="color: gray;" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item" ><a class="page-link" style="color: gray;" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" style="color: gray;"  href="#">2</a></li>
-              <li class="page-item"><a class="page-link"style="color: gray;" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link " style="color: gray;" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      
+   
+  
+      </div>
+      <div class="col-12 mt-5 d-flex justify-content-center">
+        <nav aria-label="Page navigation example" >
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link "style="color: gray;" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item" ><a class="page-link" style="color: gray;" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" style="color: gray;"  href="#">2</a></li>
+            <li class="page-item"><a class="page-link"style="color: gray;" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link " style="color: gray;" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
 
@@ -151,5 +197,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script type="module" src="/js/index.js"></script>
+  <script type="module" src="/js/utils/getValuesOfinputs.js"></script>
 </body>
 </html>
